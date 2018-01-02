@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./moduły/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./moduły/slick/slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="container text-right">
+            <span class="header-item reg-btn" data-toggle="modal" data-target="#registerModal">ZAŁÓŻ KONTO</span>
+            <span data-toggle="modal" class="header-item log-btn" data-target="#loginModal">ZALOGUJ SIE</span>
+        </div>
+    </div>
+      
+    <!-- content -->
+
+    <div class="content">
+        <div class="container">
+            <div class="search-section">
+                <form action="#" class="form-inline">
+                    <div class="input-group search-inputs col-12 justify-content-md-center">
+                        <i class="fa fa-search"></i>      
+                        <input type="text" placeholder="Wpisz szukana fraze np.informatyka, Warszawa, java" class="form-control search-input col-8 col-md-9" />
+                        <input type="submit" class="btn  search-btn col-4 col-md-3" value="Szukaj">
+                    </div>
+                </form>
+            </div>
+            <div class="slick-with-btns">
+                <div class="slick-wrap">
+                    <div class="slider">
+                        <div class="slider-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3 pic-container">
+                                        <img src="./imgs/slidepic.jpg" alt="programist" class="slidepic">
+                                    </div>
+                                    <div class="col-9 info-container">
+                                        <p class="slide-para-default">Profil zweryfikowane przez: <span class="green-text">lorem ipsum</span></p>
+                                        <p class="slide-para-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit eos, nulla sequi quas repellendus quidem.</p>
+                                        <ul class="list-inline star-list">
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gray-star">&#9733;</li>
+                                            </ul>
+                                            <p class="slide-para-small">Srednia ocena:<span>4</span></p>
+                                    </div>
+                                    <div class="col-12 profession-box text-center">
+                                        <span>PROGRAMISTA</span>
+                                    </div>
+                                </div>
+                                <div class="row info-item-list">
+                                    <div class="col-6 col-sm-4 info-item">
+                                        <p class="slide-para-default">Branża</p>
+                                        <p class="slide-para-small">IT-Rozwój oprogramowania</p>
+                                    </div>
+                                    <div class="col-6 col-sm-4 info-item">
+                                        <p class="slide-para-default">Destynacja</p>
+                                        <p class="slide-para-small">Zdalnie</p>
+                                    </div>
+                                    <div class="col-6 col-sm-4 info-item">
+                                        <p class="slide-para-default">Wynagrodzenie</p>
+                                        <p class="slide-para-small">12000</p>
+                                    </div>
+                                    <div class="col-6 col-sm-4 info-item">
+                                        <p class="slide-para-default">Dostepnosc</p>
+                                        <p class="slide-para-small">za miesiac</p>
+                                    </div>
+                                    <div class="col-6 col-sm-4 info-item">
+                                        <p class="slide-para-default">Jezyki</p>
+                                        <p class="slide-para-small">Angielski, Polski</p>
+                                    </div>
+                                    <div class="col-6 col-sm-4 info-item adjust-line">
+                                        <p class="slide-para-default">Cena za zweryfikowany profil</p>
+                                        <p class="slide-para-small">500zl</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <button class="col-12 col-md-10 btn description-btn">Zobacz pelny opis</button>
+                                    <div class="col-12 col-md-10 gray-buttons-container">
+                                        <button class="btn gray-btn">dodaj do katalogu</button>
+                                        <button class="btn gray-btn">Dodaj do kosza</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3 pic-container">
+                                        <img src="./imgs/slidepic.jpg" alt="programist" class="slidepic">
+                                    </div>
+                                    <div class="col-9 info-container">
+                                        <p class="slide-para-default">Profil zweryfikowane przez: <span class="green-text">lorem ipsum</span></p>
+                                        <p class="slide-para-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit eos, nulla sequi quas repellendus quidem.</p>
+                                        <ul class="list-inline star-list">
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gray-star">&#9733;</li>
+                                            </ul>
+                                            <p class="slide-para-small">Srednia ocena:<span>4</span></p>
+                                    </div>
+                                    <div class="col-12 profession-box text-center">
+                                        <span>PROGRAMISTA</span>
+                                    </div>
+                                </div>
+                                <div class="row info-item-list">
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Branża</p>
+                                        <p class="slide-para-small">IT-Rozwój oprogramowania</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Destynacja</p>
+                                        <p class="slide-para-small">Zdalnie</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Wynagrodzenie</p>
+                                        <p class="slide-para-small">12000</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Dostepnosc</p>
+                                        <p class="slide-para-small">za miesiac</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Jezyki</p>
+                                        <p class="slide-para-small">Angielski, Polski</p>
+                                    </div>
+                                    <div class="col-4 info-item adjust-line">
+                                        <p class="slide-para-default">Cena za zweryfikowany profil</p>
+                                        <p class="slide-para-small">500zl</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <button class="col-10 btn description-btn">Zobacz pelny opis</button>
+                                    <div class="col-10 gray-buttons-container">
+                                        <button class="btn gray-btn">dodaj do katalogu</button>
+                                        <button class="btn gray-btn">Dodaj do kosza</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3 pic-container">
+                                        <img src="./imgs/slidepic.jpg" alt="programist" class="slidepic">
+                                    </div>
+                                    <div class="col-9 info-container">
+                                        <p class="slide-para-default">Profil zweryfikowane przez: <span class="green-text">lorem ipsum</span></p>
+                                        <p class="slide-para-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit eos, nulla sequi quas repellendus quidem.</p>
+                                        <ul class="list-inline star-list">
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gray-star">&#9733;</li>
+                                            </ul>
+                                            <p class="slide-para-small">Srednia ocena:<span>4</span></p>
+                                    </div>
+                                    <div class="col-12 profession-box text-center">
+                                        <span>PROGRAMISTA</span>
+                                    </div>
+                                </div>
+                                <div class="row info-item-list">
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Branża</p>
+                                        <p class="slide-para-small">IT-Rozwój oprogramowania</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Destynacja</p>
+                                        <p class="slide-para-small">Zdalnie</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Wynagrodzenie</p>
+                                        <p class="slide-para-small">12000</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Dostepnosc</p>
+                                        <p class="slide-para-small">za miesiac</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Jezyki</p>
+                                        <p class="slide-para-small">Angielski, Polski</p>
+                                    </div>
+                                    <div class="col-4 info-item adjust-line">
+                                        <p class="slide-para-default">Cena za zweryfikowany profil</p>
+                                        <p class="slide-para-small">500zl</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <button class="col-10 btn description-btn">Zobacz pelny opis</button>
+                                    <div class="col-10 gray-buttons-container">
+                                        <button class="btn gray-btn">dodaj do katalogu</button>
+                                        <button class="btn gray-btn">Dodaj do kosza</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3 pic-container">
+                                        <img src="./imgs/slidepic.jpg" alt="programist" class="slidepic">
+                                    </div>
+                                    <div class="col-9 info-container">
+                                        <p class="slide-para-default">Profil zweryfikowane przez: <span class="green-text">lorem ipsum</span></p>
+                                        <p class="slide-para-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit eos, nulla sequi quas repellendus quidem.</p>
+                                        <ul class="list-inline star-list">
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gray-star">&#9733;</li>
+                                            </ul>
+                                            <p class="slide-para-small">Srednia ocena:<span>4</span></p>
+                                    </div>
+                                    <div class="col-12 profession-box text-center">
+                                        <span>PROGRAMISTA</span>
+                                    </div>
+                                </div>
+                                <div class="row info-item-list">
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Branża</p>
+                                        <p class="slide-para-small">IT-Rozwój oprogramowania</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Destynacja</p>
+                                        <p class="slide-para-small">Zdalnie</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Wynagrodzenie</p>
+                                        <p class="slide-para-small">12000</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Dostepnosc</p>
+                                        <p class="slide-para-small">za miesiac</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Jezyki</p>
+                                        <p class="slide-para-small">Angielski, Polski</p>
+                                    </div>
+                                    <div class="col-4 info-item adjust-line">
+                                        <p class="slide-para-default">Cena za zweryfikowany profil</p>
+                                        <p class="slide-para-small">500zl</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <button class="col-10 btn description-btn">Zobacz pelny opis</button>
+                                    <div class="col-10 gray-buttons-container">
+                                        <button class="btn gray-btn">dodaj do katalogu</button>
+                                        <button class="btn gray-btn">Dodaj do kosza</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-3 pic-container">
+                                        <img src="./imgs/slidepic.jpg" alt="programist" class="slidepic">
+                                    </div>
+                                    <div class="col-9 info-container">
+                                        <p class="slide-para-default">Profil zweryfikowane przez: <span class="green-text">lorem ipsum</span></p>
+                                        <p class="slide-para-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit eos, nulla sequi quas repellendus quidem.</p>
+                                        <ul class="list-inline star-list">
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gold-star">&#9733;</li>
+                                            <li class="list-inline-item gray-star">&#9733;</li>
+                                            </ul>
+                                            <p class="slide-para-small">Srednia ocena:<span>4</span></p>
+                                    </div>
+                                    <div class="col-12 profession-box text-center">
+                                        <span>PROGRAMISTA</span>
+                                    </div>
+                                </div>
+                                <div class="row info-item-list">
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Branża</p>
+                                        <p class="slide-para-small">IT-Rozwój oprogramowania</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Destynacja</p>
+                                        <p class="slide-para-small">Zdalnie</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Wynagrodzenie</p>
+                                        <p class="slide-para-small">12000</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Dostepnosc</p>
+                                        <p class="slide-para-small">za miesiac</p>
+                                    </div>
+                                    <div class="col-4 info-item">
+                                        <p class="slide-para-default">Jezyki</p>
+                                        <p class="slide-para-small">Angielski, Polski</p>
+                                    </div>
+                                    <div class="col-4 info-item adjust-line">
+                                        <p class="slide-para-default">Cena za zweryfikowany profil</p>
+                                        <p class="slide-para-small">500zl</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <button class="col-10 btn description-btn">Zobacz pelny opis</button>
+                                    <div class="col-10 gray-buttons-container">
+                                        <button class="btn gray-btn">dodaj do katalogu</button>
+                                        <button class="btn gray-btn">Dodaj do kosza</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow arr-left"></div>
+                <div class="arrow arr-right"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal REGISTER-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Rejestracja </h5>
+                </div>
+                <div class="modal-body">
+                    <form id="reg-form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="pass-label">Hasło</label></br>
+                            <small>conajmiej 8 znaków, 1 wielka litery i cyfra </small>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPhone1">Phone</label>
+                            <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="Phone" required>
+                        </div>
+                        <input type="submit" class="form-control submit-btn" value="Zarejestruj sie">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal LOGIN-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                logowanie
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="./moduły/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
