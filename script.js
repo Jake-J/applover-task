@@ -13,12 +13,34 @@ $(document).ready(function(){
       }else{
         return false;
       }
-    }     
+    }    
+
     const move = function(goNext){
       return function(){
-        goNext ? slider.slick('slickNext') : slider.slick('slickPrev');
+        if(goNext){
+          disableSlick();
+          $('.arr-left').css('visibility','visible');
+          slider.slick('slickNext');
+         }
+         else{
+          disableSlick();
+          $('.arr-right').css('visibility','visible');
+          slider.slick('slickPrev');
+         }
       }
     }
+    const disableSlick = function(){
+      const slickIdx =$('.slick-current').data("slickIndex");
+      if(slickIdx === 1){
+        $('.slick-current').prev().prev().css('visibility','hidden');
+        $('.arr-left').css('visibility','hidden');
+      }else if(slickIdx === 3){
+        $('.slick-current').next().next().css('visibility','hidden');
+        $('.arr-right').css('visibility','hidden');
+      }
+    }
+    
+
     slider.slick({
       centerPadding: '60px',
       slidesToShow: 3,
@@ -35,10 +57,14 @@ $(document).ready(function(){
         }
       ]
     })
+    $('.slick-current').prev().css('visibility','hidden');
+
+
     $('.arr-left').on('click',move(0));
     $('.arr-right').on('click',move(1));
-    $('.submit-btn').on('click',function(e){
+    $('.register-btn').on('click',function(e){
       $('#reg-form').submit(validateForm);
     })
-    console.log($('#reg-form'));
+
+
   });

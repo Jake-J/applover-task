@@ -29,8 +29,8 @@
                 <form action="#" class="form-inline">
                     <div class="input-group search-inputs col-12 justify-content-md-center">
                         <i class="fa fa-search"></i>      
-                        <input type="text" placeholder="Wpisz szukana fraze np.informatyka, Warszawa, java" class="form-control search-input col-8 col-md-9" />
-                        <input type="submit" class="btn  search-btn col-4 col-md-3" value="Szukaj">
+                        <input type="text" placeholder="Wpisz szukana fraze np.informatyka, Warszawa, java" class="form-control search-input col-8 col-md-6" />
+                        <input type="submit" class="btn  search-btn col-4 col-md-2" value="Szukaj">
                     </div>
                 </form>
             </div>
@@ -338,24 +338,27 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Rejestracja </h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Rejestracja</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
                 </div>
                 <div class="modal-body">
                     <form id="reg-form">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control modal-input" id="exampleInputEmail1"  required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1" class="pass-label">Hasło</label></br>
                             <small>conajmiej 8 znaków, 1 wielka litery i cyfra </small>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <input type="password" class="form-control modal-input" id="exampleInputPassword1"  required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPhone1">Phone</label>
-                            <input type="tel" class="form-control" id="exampleInputPhone1" placeholder="Phone" required>
+                            <label for="exampleInputPhone1">Telefon</label>
+                            <input type="tel" class="form-control modal-input" id="exampleInputPhone1"  required>
                         </div>
-                        <input type="submit" class="form-control submit-btn" value="Zarejestruj sie">
+                        <input type="submit" class="form-control submit-btn register-btn" value="Zarejestruj sie">
                     </form>
                 </div>
             </div>
@@ -365,19 +368,30 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                logowanie
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Logowanie</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form id="reg-form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Email</label>
+                            <input type="email" class="form-control modal-input" id="exampleInputEmail2"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2" class="pass-label">Hasło</label></br>
+                            <input type="password" class="form-control modal-input" id="exampleInputPassword2"  required>
+                        </div>
+                        <input type="submit" class="form-control submit-btn" value="Zaloguj">
+                        <center><div class="horz-lines"><span class="lub">lub</span></div></center>
+                        <input type="submit" class="form-control submit-btn" value="Zaloguj sie prez Facebook">
+                        <input type="submit" class="form-control submit-btn" value="Zaloguj sie przez LinkedIn">
+                        <input type="submit" class="form-control submit-btn gray-bg" value="Zresetuj haslo">
+                    </form>
+                </div>
             </div>
         </div>
     </div>

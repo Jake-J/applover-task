@@ -167,7 +167,7 @@ button.gray-btn{
     background-position:center;
     border-radius:50%;
     position:absolute;
-    bottom:50%;
+    top:50%;
     z-index: 999;
   }
 .arrow:hover{
@@ -176,6 +176,7 @@ button.gray-btn{
 .arr-left{
     transform:translateY(-50%) rotate(180deg);
     left:-50px;
+    visibility:hidden;
 }
 .arr-right{
     right:-50px;
@@ -183,7 +184,12 @@ button.gray-btn{
 }
 
 /* modal styling */
-
+#registerModal div.modal-dialog{
+    margin:0 auto;
+    top:50%;
+    transform: translateY(-50%);
+}
+#reg-form label{margin-bottom: .3rem;}
 .modal-header{
     background-color:#6d9f03;
     color:#fff;
@@ -197,6 +203,17 @@ button.description-btn,input.submit-btn{
     background-color:#6d9f03;
     border-radius:1.5em;
     padding:7px 0;
+    margin:5px 0;
+    border:none;
+    outline:none;
+    box-shadow: none;
+}
+button.description-btn:active,
+input.submit-btn:active,
+button.description-btn:focus,
+input.submit-btn:focus{
+    box-shadow: none;
+    background-color:#6d9f03;
 }
 input.submit-btn:hover{
     cursor: pointer;
@@ -205,7 +222,25 @@ label.pass-label{
     padding-bottom: 0;
     margin-bottom:0;
 }
-
+.modal-input{
+    border:none;
+    outline: none;
+    background-color: #f2f0f0;
+}
+input.submit-btn.gray-bg{
+    background-color: gray;
+}
+div.horz-lines { 
+    width:70px; 
+    text-align:center; 
+    border-bottom: 1px solid #000; 
+    line-height:0.1em; 
+    margin:10px 0; 
+} 
+div.horz-lines span.lub { 
+    background:#fff; 
+    padding:0 5px; 
+}
 /* modal styling end */
 /*slick styles*/
 div.slick-with-btns{
@@ -249,7 +284,10 @@ div.slick-slide.slick-current{
     .arr-right{
         right:-25px;
     }
-    
+    .arrow {
+        top:0;
+        bottom:50%;
+    }
     div.slick-wrap{
         padding:25px 0;
     }
