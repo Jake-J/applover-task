@@ -284,10 +284,6 @@ div.slick-slide.slick-current{
     .arr-right{
         right:-25px;
     }
-    .arrow {
-        top:0;
-        bottom:50%;
-    }
     div.slick-wrap{
         padding:25px 0;
     }
